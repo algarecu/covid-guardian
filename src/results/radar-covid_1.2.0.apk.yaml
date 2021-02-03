@@ -1,0 +1,87 @@
+app:
+  activities_launch_mode:
+    com.google.android.gms.common.api.GoogleApiActivity: standard
+    es.gob.radarcovid.features.covidreport.confirmation.ConfirmationActivity: standard
+    es.gob.radarcovid.features.covidreport.form.view.CovidReportActivity: standard
+    es.gob.radarcovid.features.exposure.view.ExposureActivity: standard
+    es.gob.radarcovid.features.information.view.InformationActivity: standard
+    es.gob.radarcovid.features.main.view.MainActivity: standard
+    es.gob.radarcovid.features.onboarding.view.OnboardingActivity: standard
+    es.gob.radarcovid.features.splash.view.SplashActivity: standard
+  allow_backup: false
+  app_name: Radar COVID
+  debuggable: false
+  min_sdk: '23'
+  package_name: es.gob.radarcovid
+  permissions:
+    dangerous:
+    - BLUETOOTH
+    - INTERNET
+    - WAKE_LOCK
+    normal:
+    - RECEIVE_BOOT_COMPLETED
+    - REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+    - FOREGROUND_SERVICE
+    - ACCESS_NETWORK_STATE
+    others: []
+    signature: []
+    signatureOrSystem: []
+  target_sdk: '29'
+  use_cleartext_traffic: false
+  version_code: '9'
+  version_name: 1.2.0
+code_analysis:
+  insecure_certificate_validation: []
+  insecure_random_generator:
+  - Les/gob/radarcovid/datamanager/usecase/ReportFakeInfectionUseCase$getFakeVerifyToken$1;.subscribe
+  insecure_webview_implementation: []
+  ip_disclosure:
+  - 1.3.6.1.4.1.22554
+  - 0.4.0.127.0.15.1.1.13.0
+  - 0.4.0.127.0.15.1.1.14.0
+  - 1.3.14.3.2.2
+  - 1.3.14.3.2.3
+  - 1.3.14.3.2.4
+  - 1.3.14.3.2.6
+  - 1.3.14.3.2.7
+  - 1.3.14.3.2.8
+  - 1.3.14.3.2.9
+  - 1.3.14.3.2.17
+  - 1.3.14.3.2.26
+  - 1.3.14.3.2.27
+  - 1.3.14.3.2.29
+  - 1.3.14.7.2.1.1
+  - 1.3.6.1.4.1.8301.3.1.3.5.3.2
+  - 1.3.6.1.4.1.8301.3.1.3.3
+  - 1.3.6.1.4.1.8301.3.1.3.4.1
+  - 1.3.6.1.4.1.8301.3.1.3.4.2
+  - 1.3.6.1.4.1.8301.3.1.3.4.2.1
+  - 1.3.6.1.4.1.8301.3.1.3.4.2.2
+  - 1.3.6.1.4.1.8301.3.1.3.4.2.3
+  - '::'
+  remote_webview_debugging: []
+  risky_cryptographic_algorithms:
+    improper_encrypt_functions: []
+    insecure_hash_functions: []
+  sql_hardcoded_secrets: []
+  sql_raw_queries:
+  - Landroidx/room/InvalidationTracker;.internalInit
+  - Landroidx/room/RoomDatabase;.query
+  - Landroidx/sqlite/db/framework/FrameworkSQLiteDatabase;.query
+  - Landroidx/work/impl/WorkDatabaseMigrations$WorkMigration9To10;.migrate
+  trackers: []
+pii_taint_result:
+  leaked_keys: []
+root_analysis:
+  debug_detections: []
+  root_detections: []
+  root_usage: []
+virus_total:
+  md5: 356452cc9382bc1e4fdc77d4a218310c
+  permalink: https://www.virustotal.com/gui/file/2b613627897da4cd3be77ddeb19d70e3e3bf5d7ad2d3145aa3bc7cf0ed6114d2/detection/f-2b613627897da4cd3be77ddeb19d70e3e3bf5d7ad2d3145aa3bc7cf0ed6114d2-1612341342
+  resource: 2b613627897da4cd3be77ddeb19d70e3e3bf5d7ad2d3145aa3bc7cf0ed6114d2
+  response_code: 1
+  scan_id: 2b613627897da4cd3be77ddeb19d70e3e3bf5d7ad2d3145aa3bc7cf0ed6114d2-1612341342
+  sha1: 17eeba1e08f0cb8baa535ee4b5efbc103469d218
+  sha256: 2b613627897da4cd3be77ddeb19d70e3e3bf5d7ad2d3145aa3bc7cf0ed6114d2
+  verbose_msg: Scan request successfully queued, come back later for the report
